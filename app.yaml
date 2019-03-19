@@ -1,0 +1,61 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: /favicon\.ico
+
+- url: /sw\.js
+  static_files: sw.js
+  upload: sw\.js
+
+- url: /manifest\.json
+  static_files: manifest.json
+  upload: manifest\.json
+
+- url: /js
+  static_dir: js
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /ressources
+  static_dir: ressources
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css
+  static_dir: css
+
+#  la page par defaut TOUJOURS EN DERNIER !!!!!!!!!!!!!!
+- url: .*
+  script: main.app
+
+#############################################################"
+#############################################################"
+##Le reste de la configuration
+#############################################################"
+#############################################################"
+
+# Les fichiers a ne pas uploader (fichier de travail du projet)
+skip_files:
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*\.md$
+- ^(.*/)?.*\.scss$
+- ^(.*/)?.*\.buildconfig$
+- ^(.*/)?\..*$
+- docs/
+- ^_.*
+
+# Les differentes version de librairies utilisees.
+libraries:
+- name: jinja2
+  version: latest
+
+- name: webapp2
+  version: "2.5.2"
