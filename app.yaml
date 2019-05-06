@@ -7,9 +7,9 @@ handlers:
   static_files: favicon.ico
   upload: /favicon\.ico
 
-- url: /sw\.js
-  static_files: sw.js
-  upload: sw\.js
+- url: /sw-uniPopCorn\.js
+  static_files: sw-uniPopCorn.js
+  upload: sw-uniPopCorn\.js
 
 - url: /manifest\.json
   static_files: manifest.json

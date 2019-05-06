@@ -1,4 +1,4 @@
 importScripts("js/ClassServiceWorker.js");
 let file = [];
 
-var sw = new clsServiceWorker("vierge","0.00",file);
+var sw = new clsServiceWorker("uniPopCorn","0.00",file);

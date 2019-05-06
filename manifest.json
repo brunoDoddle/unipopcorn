@@ -1,16 +1,21 @@
 {
-    "name": "vierge",
-    "short_name": "vierge",
+    "name": "uniPopcorn",
+    "short_name": "uniPop",
     "icons": [
         {
             "src": "/ressources/png/pwa.png",
             "sizes": "30x30",
             "type": "image/png"
-    }
-  ],
+        },
+        {
+          "src": "/ressources/png/pwa144.png",
+          "sizes": "144x144",
+          "type": "image/png"
+      }
+    ],
     "start_url": "/",
     "display": "standalone",
     "orientation": "portrait",
-    "background_color": "#cc6666",
-    "theme_color": "#9e2f2f"
+    "background_color": "#1099bb",
+    "theme_color": "#1099bb"
 }
