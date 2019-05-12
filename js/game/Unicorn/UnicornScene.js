@@ -8,8 +8,11 @@ import {
     Popcorn,
     JaugeProut,
     SensDuVent,
-    WhereAreYou
-} from "/js/game/Unicorn/sprites.js";
+    WhereAreYou,
+    FlyingObject,
+    Nuages
+} from "/js/game/Unicorn/common.js";
+
 
 /**
  * La scene principale, globalement le jeux...
@@ -18,20 +21,11 @@ import {
  * @extends {Scene}
  */
 export class UnicornScene extends Scene {
+    //TODO: Faire de vraie beaux nuages..
     static SCALE = 3;
-    static NUAGES = ["pNuage1", "mNuage1", "gNuage1", "gNuage2", "gNuage3"];
 
     constructor() {
         super();
-/*        const blurFilter1 = new PIXI.filters.BlurFilter();
-        const blurFilter2 = new PIXI.filters.BlurFilter();
-        const blurFilter3 = new PIXI.filters.BlurFilter();
-*/
-        // Biblio de collision
-        this.B = new Bump(PIXI);
-
-        this.nuageLayers = [];
-
         // On ajoute une petite licorne
         this.unicorn = new Unicorn(UnicornScene.SCALE);
         this.unicorn.gotoXY(ScenesManager.width / 2, ScenesManager.height / 2);
@@ -40,6 +34,8 @@ export class UnicornScene extends Scene {
         this.jaugeProut = new JaugeProut(5);
         this.sensDuVent = new SensDuVent();
         this.whereAreYou = new WhereAreYou(this.unicorn.sprite);
+        this.flyingObject = new FlyingObject(UnicornScene.SCALE);
+        this.nuages = new Nuages(3,UnicornScene.SCALE);
 
         var textures = [];
 
@@ -49,9 +45,6 @@ export class UnicornScene extends Scene {
         this.sun.animationSpeed = 0.1;
         this.sun.play();
 
-        // Fabrication des fond nuageux... 
-        this.doNuageLayer(3);
-
         ScenesManager.resources.laser.sound.volume = .10;
 
         this.sun.x = 30;
@@ -59,70 +52,26 @@ export class UnicornScene extends Scene {
 
         this.sun.scale.set(UnicornScene.SCALE);
 
+        //******************************************* */
+        //******************************************* */
+        // ajout des couches sur le renderer
+        //******************************************* */
+        //******************************************* */
+        //Pour faire jolie (todo: à animer;.)
         this.addChild(this.sun);
-        this.nuageLayers.forEach((nuages, n) => {
-            if (n == 1) {
-                this.addChild(this.unicorn.sprite);
-                this.addChild(this.popcorn.sprite);
-            }
-            this.addChild(nuages);
-        })
 
-        // this.nuageLayers[3].filters = [blurFilter1];
-        // this.nuageLayers[2].filters = [blurFilter2];
-        // this.nuageLayers[1].filters = [blurFilter3];
-        // blurFilter1.blur = 6;
-        // blurFilter2.blur = 4;
-        // blurFilter3.blur = 2;
+        // Scenes du jeux
+        this.addChild(this.nuages.nuageLayers[0]);
+        this.addChild(this.nuages.nuageLayers[1]);
+        this.addChild(this.popcorn.sprite);
+        this.addChild(this.flyingObject.container);
+        this.addChild(this.unicorn.sprite);
+        this.addChild(this.nuages.nuageLayers[2]);
+
+        // Indicateurs du jeux..
         this.addChild(this.jaugeProut.container);
         this.addChild(this.sensDuVent.container);
         this.addChild(this.whereAreYou.container);
-    }
-
-    /**
-     * Fabique un ciel de nuage en combinant des container
-     * @param {*} max   Nombre de container voulu
-     * @memberof UnicornScene
-     */
-    doNuageLayer(max) {
-        for (var n = 0; n < max; n++) {
-            const nuages = new PIXI.extras.TilingSprite(
-                this.doNuage(),
-                ScenesManager.width,
-                ScenesManager.height
-            );
-            nuages.scale.set(UnicornScene.SCALE);
-            this.nuageLayers.push(nuages)
-        }
-    }
-
-    /**
-     *Fait un container de nuages
-    * @param {*} sprite    Sprite à inserer dasn le container pour avoir une base
-    * @returns Un texturepour sprite
-    * @memberof UnicornScene
-    */
-    doNuage(sprite) {
-        const container = new PIXI.Container();
-
-        if (sprite) {
-            sprite.x = 0;
-            sprite.y = 0;
-            container.addChild(sprite);
-        }
-        let renderTexture = PIXI.RenderTexture.create(500, 500);
-
-        for (let i = 0; i < 10; i++) {
-            var textureNuage = Math.floor(Math.random() * UnicornScene.NUAGES.length);
-            var nuage = new PIXI.Sprite(PIXI.utils.TextureCache[UnicornScene.NUAGES[textureNuage]]);
-            nuage.anchor.set(.5); // On se met au milieux du sprite
-            nuage.x = (nuage.width / 2) + Math.floor(Math.random() * (renderTexture.width - (nuage.width)));
-            nuage.y = (nuage.height / 2) + Math.floor(Math.random() * (renderTexture.height - (nuage.height)));
-            container.addChild(nuage);
-        }
-        ScenesManager.renderer.render(container, renderTexture);
-
-        return renderTexture;
     }
 
     /************************************************************************************/
@@ -131,24 +80,25 @@ export class UnicornScene extends Scene {
         // Gestion du vent et du pocorn
         this.sensDuVent.animate();
         this.popcorn.animate();
+        this.flyingObject.distribute();
+        this.flyingObject.animate(this.unicorn);
 
         // Gestion de l'unicorn
         this.unicorn.move(SensDuVent.vx, SensDuVent.vy);
         // Gestion de la mort de la licorne
         if (!this.whereAreYou.dansEcran()){
             ScenesManager.goToScene("mort");
-            //Tou remettre à 0, mais apres changement de scene...
-            this.unicorn.gotoXY(ScenesManager.width / 2, ScenesManager.height / 2);
+            //Tout remettre à 0, mais apres changement de scene...
+            this.unicorn.reset();
             this.jaugeProut.clear();
             this.popcorn.spawn();
+            this.flyingObject.reset();
         }
 
-        this.nuageLayers.forEach((nuage, n) => {
-            nuage.tilePosition.x += SensDuVent.vx * 1 / (this.nuageLayers.length - n);
-            nuage.tilePosition.y += SensDuVent.vy * 1 / (this.nuageLayers.length - n);
-        });
+        this.nuages.animate();
 
-        if (this.B.hitTestRectangle(this.unicorn.sprite, this.popcorn.sprite)) {
+        // Voir si accessible (le bump)...
+        if (ScenesManager.bump.hitTestRectangle(this.unicorn.sprite, this.popcorn.sprite)) {
             ScenesManager.resources.laser.sound.play()
             this.jaugeProut.addProut();
             this.popcorn.spawn();

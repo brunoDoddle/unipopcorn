@@ -1,52 +1,35 @@
 import {Scene,ScenesManager} from "/js/ngine/scenes.js";
+import * as tools from "/js/ngine/tools.js";
+
 export class MortScene extends Scene{
     constructor(){
         super();
         this.cpt = 0;
 
-        const textureTitre = PIXI.Texture.fromFrame("tesMort");
-        const titre = new PIXI.Sprite(textureTitre);
-    
-        titre.anchor.set(0.5);
-        titre.x = ScenesManager.width  / 2
-        titre.y = ScenesManager.height / 3;
-        this.addChild(titre);    
+        this.placer = new tools.Placer([2,1,1]);
+        this.placer.setTop(2);
+        this.addChild(this.placer);
 
-        const textureRePlayButton = PIXI.Texture.fromFrame("rePlayButton");
-        this.button = new PIXI.Sprite(textureRePlayButton);
-        this.button.buttonMode = true;
-    
-        this.button.anchor.set(0.5);
-        this.button.x = ScenesManager.width  / 2
-        this.button.y = ScenesManager.height / 3 * 2 - 50;
-    
-        // Le bouton replay
-        this.button.interactive = true;
-        this.button.buttonMode = true;   
-        this.button.on('pointerdown', e => {
-            ScenesManager.goToScene('game');
-        })        
-        this.addChild(this.button);    
+        this.titre = new tools.Titre(
+            "tesMort"
+        );
+        this.placer.setTo(0,this.titre);    
 
-        const textureMenuButton = PIXI.Texture.fromFrame("menuButton");
-        const button = new PIXI.Sprite(textureMenuButton);
-        button.buttonMode = true;
-    
-        button.anchor.set(0.5);
-        button.x = ScenesManager.width  / 2
-        button.y = ScenesManager.height / 3 * 2 + 50;
-    
-        // Le bouton menu
-        button.interactive = true;
-        button.buttonMode = true;   
-        button.on('pointerdown', e => {
-            ScenesManager.goToScene('menu');
-        })        
-        this.addChild(button);    
+        this.replay= new tools.Button(
+            "rePlayButton",
+            e => {ScenesManager.goToScene('game');}
+        );
+        this.placer.setTo(1,this.replay);    
+
+        this.menu= new tools.Button(
+            "menuButton",
+            e => {ScenesManager.goToScene('menu');}
+        );
+        this.placer.setTo(2,this.menu);    
     }
 
     update() {
-        this.button.scale.set(1 + Math.sin(this.cpt+=.1)/20); 
+        this.replay.tilt();
     }
 }
 

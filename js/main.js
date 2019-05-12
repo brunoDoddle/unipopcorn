@@ -8,19 +8,21 @@ import {MortScene} from "/js/game/Mort/MortScene.js";
 
 var worker = navigator.serviceWorker.register('/sw-uniPopCorn.js');
 
-// // calcul du ratio pour le scale...
-// //if( screen.width >= 1920 && screen.height >= 1080 ){
-// var _SCALE = 2;
-
 // Setting spécifique PIXI
 PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
 PIXI.settings.RESOLUTION = window.devicePixelRatio;
 
 // Le loader...
-// Loader plein de nuages
 PIXI.loader
     .add("sun","ressources/png/sun.json")
     .add('SSLicorne', 'ressources/png/licorne.json')    
+    .add("chaussure","ressources/png/chaussure.png")
+    .add("avion1","ressources/png/avion1.png")
+    .add("avion2","ressources/png/avion2.png")
+    .add("missile","ressources/png/missile.png")
+    .add("meteor","ressources/png/meteor.png")
+    .add("slip","ressources/png/slip.png")
+    .add("branche","ressources/png/branche.png")
     .add("playButton","ressources/png/playButton.png")
     .add("rePlayButton","ressources/png/rePlayButton.png")
     .add("menuButton","ressources/png/menuButton.png")
@@ -49,9 +51,9 @@ function setup(loader,resources){
     ScenesManager.create(window.innerWidth, window.innerHeight,resources, 0x1099bb);
 
     // Ajout des différentes scenes du jeux, le menu, le jeux et les highScores...
-    var game = ScenesManager.createScene('game',UnicornScene);
-    var menu = ScenesManager.createScene('menu',MenuScene);
-    var mort = ScenesManager.createScene('mort',MortScene);
+    const game = ScenesManager.createScene('game',UnicornScene);
+    const menu = ScenesManager.createScene('menu',MenuScene);
+    const mort = ScenesManager.createScene('mort',MortScene);
     ScenesManager.goToScene('menu');
 }
 // 

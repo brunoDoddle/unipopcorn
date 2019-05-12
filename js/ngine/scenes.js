@@ -28,6 +28,7 @@ export class ScenesManager {
     static width;
     static height;
     static ressources;
+    static bump = new Bump(PIXI);
 
     constructor(){
     }
