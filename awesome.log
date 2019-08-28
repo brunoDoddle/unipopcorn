@@ -1,0 +1,551 @@
+[ N 2019-08-27 09:43:21.3458 1352/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 09:43:21.4603 1355/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 09:43:21.4611 1355/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 09:43:21.5034 1355/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1355
+App 1390 output: Traceback (most recent call last):
+App 1390 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 369, in <module>
+App 1390 output:     
+App 1390 output: app_module = load_app()
+App 1390 output:   File "/usr/share/passenger/helper-scripts/wsgi-loader.py", line 76, in load_app
+App 1390 output:     
+App 1390 output: return imp.load_source('passenger_wsgi', startup_file)
+App 1390 output:   File "/home/doddle/Code/unipopcorn/passenger_wsgi.py", line 5, in <module>
+App 1390 output:     
+App 1390 output: from app import app as application  #on import l'objet app(Flask) du fichier app
+App 1390 output:   File "
+App 1390 output: /home/doddle/Code/unipopcorn/app.py
+App 1390 output: ", line 
+App 1390 output: 17
+App 1390 output: 
+App 1390 output:     
+App 1390 output: return render_template('index.html')
+App 1390 output:     
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output:  
+App 1390 output: ^
+App 1390 output: IndentationError
+App 1390 output: : 
+App 1390 output: unindent does not match any outer indentation level
+App 1390 output: 
+[ E 2019-08-27 09:43:25.0659 1355/Tf age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /home/doddle/Code/unipopcorn: The application process exited prematurely.
+  Error ID: 2eee2e97
+  Error details saved to: /tmp/passenger-error-X7afSK.html
+
+[ E 2019-08-27 09:43:25.0945 1355/T9 age/Cor/Con/CheckoutSession.cpp:276 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 2eee2e97. Please see earlier logs for details about the error.
+[ N 2019-08-27 09:43:25.7997 1355/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-08-27 09:44:46.2062 1355/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 09:44:46.2067 1355/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 09:44:46.2074 1355/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 09:44:46.2076 1355/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 09:44:46.2082 1355/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 09:44:46.2084 1355/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 09:44:46.2114 1355/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 09:44:46.2116 1355/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 09:44:46.8383 1355/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 09:44:48.6244 1452/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 09:44:48.7394 1455/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 09:44:48.7401 1455/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 09:44:48.7825 1455/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1455
+[ N 2019-08-27 09:44:51.9355 1455/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-08-27 09:49:38.0879 1455/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 09:49:38.0881 1455/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 09:49:38.0883 1455/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1490, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 09:49:38.0976 1455/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1666, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 09:49:38.0979 1455/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1730, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 09:49:38.0981 1455/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 09:49:38.0983 1455/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 09:49:38.0988 1455/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 09:49:38.0992 1455/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 09:49:38.0993 1455/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 09:49:38.0995 1455/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 09:49:38.1008 1455/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1490, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 09:49:38.1011 1455/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1666, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 09:49:38.1013 1455/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1730, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 09:49:38.6100 1455/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 09:49:41.4423 1883/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 09:49:41.5584 1886/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 09:49:41.5592 1886/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 09:49:41.6014 1886/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1886
+[ N 2019-08-27 09:49:44.2011 1886/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 09:55:22.3873 1886/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2026, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:01:52.4388 1886/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1956, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:01:54.4381 1886/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2257, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:09:09.5736 1886/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3523, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:12:24.3955 1886/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3380, application /home/doddle/Code/unipopcorn (staging)
+
+[ N 2019-08-27 10:14:07.7221 1886/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 10:14:07.7223 1886/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 10:14:07.7225 1886/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1921, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:14:07.7230 1886/Tb Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 10:14:07.7232 1886/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 10:14:07.7234 1886/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 10:14:07.7236 1886/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 10:14:07.7240 1886/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 10:14:07.7242 1886/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 10:14:08.0254 1886/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1921, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:14:08.7573 1886/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 10:14:11.8628 4231/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 10:14:11.9711 4234/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 10:14:11.9717 4234/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 10:14:12.1149 4234/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 4234
+[ N 2019-08-27 10:14:14.7720 4234/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-08-27 10:14:51.6580 4234/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 10:14:51.6581 4234/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 10:14:51.6583 4234/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4269, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:14:51.6585 4234/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4307, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:14:51.6588 4234/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 10:14:51.6590 4234/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 10:14:51.6590 4234/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 10:14:51.6591 4234/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 10:14:51.6597 4234/Tc Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 10:14:51.6599 4234/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 10:14:51.6608 4234/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4269, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:14:51.6610 4234/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4307, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 10:14:52.1572 4234/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 13:53:15.9803 5375/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 13:53:16.1506 5378/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 13:53:16.1514 5378/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 13:53:16.1940 5378/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 5378
+[ N 2019-08-27 13:53:19.2020 5378/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-08-27 14:01:33.8029 5378/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 14:01:33.8031 5378/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 14:01:33.8032 5378/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5414, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:01:33.8035 5378/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 14:01:33.8036 5378/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 14:01:33.8036 5378/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 14:01:33.8037 5378/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 14:01:33.8041 5378/Tc Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 14:01:33.8042 5378/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 14:01:33.8118 5378/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5414, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:01:34.3902 5378/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 14:01:43.8835 5826/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 14:01:43.9956 5829/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 14:01:43.9963 5829/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 14:01:44.0390 5829/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 5829
+[ N 2019-08-27 14:01:46.6454 5829/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 14:02:08.7337 5829/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5865, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:02:11.1341 5829/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5910, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:02:49.9180 5829/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5991, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:02:49.9183 5829/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6046, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:03:32.2026 5829/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6149, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:03:34.4861 5829/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6203, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:03:40.9243 5829/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6296, application /home/doddle/Code/unipopcorn (staging)
+
+[ N 2019-08-27 14:05:00.3630 5829/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 14:05:00.3633 5829/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 14:05:00.3634 5829/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6398, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:05:00.3638 5829/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 14:05:00.3640 5829/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 14:05:00.3706 5829/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 14:05:00.3709 5829/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 14:05:00.3718 5829/Tc Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 14:05:00.3721 5829/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 14:05:00.3738 5829/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6398, application /home/doddle/Code/unipopcorn (staging)
+[ N 2019-08-27 14:05:00.9849 5829/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 14:05:03.0236 6544/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 14:05:03.1422 6547/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 14:05:03.1429 6547/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 14:05:03.1884 6547/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 6547
+[ N 2019-08-27 14:05:05.7592 6547/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 14:05:15.9148 6547/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6582, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:05:22.8855 6547/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6693, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:06:22.3677 6547/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6842, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:06:24.8278 6547/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6939, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:06:30.1735 6547/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7027, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 14:11:40.1203 6547/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 14:11:40.1205 6547/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 14:11:40.1206 6547/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7110, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:11:40.1211 6547/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 14:11:40.1213 6547/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 14:11:40.1218 6547/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 14:11:40.1219 6547/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 14:11:40.1244 6547/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 14:11:40.1247 6547/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 14:11:40.1292 6547/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7110, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:11:40.6569 6547/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 14:11:42.7763 7404/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 14:11:42.8922 7407/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 14:11:42.8930 7407/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 14:11:42.9354 7407/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 7407
+[ N 2019-08-27 14:11:45.6187 7407/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 14:11:56.1950 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7443, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:12:03.3194 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7569, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:12:09.6533 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7732, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:12:46.0847 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7828, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:12:49.5473 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7912, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:12:57.9053 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 7986, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:14:34.8493 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8124, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:14:36.5603 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8209, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:14:40.2996 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8246, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:14:43.0065 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8301, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:15:19.6808 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8361, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:15:22.4274 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8413, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:15:28.1313 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8501, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:15:53.1986 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8571, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:15:54.6149 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8678, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:15:56.6797 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8715, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:16:04.7813 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8774, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:16:51.7943 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8918, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:16:54.0667 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 8994, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:16:58.9964 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9058, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:17:26.3084 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9168, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:17:27.6995 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9265, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:17:29.7761 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9302, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:17:33.4670 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9353, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:18:32.1379 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9464, application /home/doddle/Code/unipopcorn (development)
+App 9548 output: [2019-08-27 14:18:33,489] ERROR in app: Exception on / [GET]
+App 9548 output: Traceback (most recent call last):
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+App 9548 output:     response = self.full_dispatch_request()
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+App 9548 output:     rv = self.handle_user_exception(e)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+App 9548 output:     reraise(exc_type, exc_value, tb)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+App 9548 output:     rv = self.dispatch_request()
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+App 9548 output:     return self.view_functions[rule.endpoint](**req.view_args)
+App 9548 output:   File "/home/doddle/Code/unipopcorn/app.py", line 17, in index
+App 9548 output:     return render_template('index.html')
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+App 9548 output:     context, ctx.app)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+App 9548 output:     rv = template.render(context)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/jinja2/environment.py", line 989, in render
+App 9548 output:     return self.environment.handle_exception(exc_info, True)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/jinja2/environment.py", line 754, in handle_exception
+App 9548 output:     reraise(exc_type, exc_value, tb)
+App 9548 output:   File "/home/doddle/Code/unipopcorn/templates/index.html", line 18, in top-level template code
+App 9548 output:     <script type="text/javascript" src="{{ url_for('statics', filename='statics/js/ngine/pixi.js') }}"></script>
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/helpers.py", line 333, in url_for
+App 9548 output:     return appctx.app.handle_url_build_error(error, endpoint, values)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1805, in handle_url_build_error
+App 9548 output:     reraise(exc_type, exc_value, tb)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/flask/helpers.py", line 323, in url_for
+App 9548 output:     force_external=external)
+App 9548 output:   File "/usr/lib/python2.7/dist-packages/werkzeug/routing.py", line 1758, in build
+App 9548 output:     raise BuildError(endpoint, values, method, self)
+App 9548 output: BuildError: Could not build url for endpoint 'statics' with values ['filename']. Did you mean 'static' instead?
+[ N 2019-08-27 14:18:38.6328 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9548, application /home/doddle/Code/unipopcorn (development)
+App 9588 output: [2019-08-27 14:18:40,136] ERROR in app: Exception on / [GET]
+App 9588 output: Traceback (most recent call last):
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1982, in wsgi_app
+App 9588 output:     response = self.full_dispatch_request()
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1614, in full_dispatch_request
+App 9588 output:     rv = self.handle_user_exception(e)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1517, in handle_user_exception
+App 9588 output:     reraise(exc_type, exc_value, tb)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1612, in full_dispatch_request
+App 9588 output:     rv = self.dispatch_request()
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1598, in dispatch_request
+App 9588 output:     return self.view_functions[rule.endpoint](**req.view_args)
+App 9588 output:   File "/home/doddle/Code/unipopcorn/app.py", line 17, in index
+App 9588 output:     return render_template('index.html')
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/templating.py", line 134, in render_template
+App 9588 output:     context, ctx.app)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/templating.py", line 116, in _render
+App 9588 output:     rv = template.render(context)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/jinja2/environment.py", line 989, in render
+App 9588 output:     return self.environment.handle_exception(exc_info, True)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/jinja2/environment.py", line 754, in handle_exception
+App 9588 output:     reraise(exc_type, exc_value, tb)
+App 9588 output:   File "/home/doddle/Code/unipopcorn/templates/index.html", line 18, in top-level template code
+App 9588 output:     <script type="text/javascript" src="{{ url_for('statics', filename='statics/js/ngine/pixi.js') }}"></script>
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/helpers.py", line 333, in url_for
+App 9588 output:     return appctx.app.handle_url_build_error(error, endpoint, values)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/app.py", line 1805, in handle_url_build_error
+App 9588 output:     reraise(exc_type, exc_value, tb)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/flask/helpers.py", line 323, in url_for
+App 9588 output:     force_external=external)
+App 9588 output:   File "/usr/lib/python2.7/dist-packages/werkzeug/routing.py", line 1758, in build
+App 9588 output:     raise BuildError(endpoint, values, method, self)
+App 9588 output: BuildError: Could not build url for endpoint 'statics' with values ['filename']. Did you mean 'static' instead?
+[ N 2019-08-27 14:19:56.5536 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9588, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:19:59.4378 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9663, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:20:09.1031 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9773, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:27:12.6034 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 9842, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:27:15.8695 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10246, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:27:27.8115 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10380, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:28:23.5524 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10481, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:28:27.2186 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10580, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:28:33.9407 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10663, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:28.8660 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10762, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:30.2389 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10897, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:33.3067 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 10941, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:35.4914 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11024, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:36.8897 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11079, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:52.7652 7407/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11116, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:29:54.9031 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11162, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:00.0745 7407/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11229, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 14:30:19.0990 7407/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 14:30:19.0993 7407/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 14:30:19.0995 7407/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11358, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:19.1000 7407/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 14:30:19.1002 7407/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 14:30:19.1007 7407/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 14:30:19.1010 7407/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 14:30:19.1054 7407/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 14:30:19.1056 7407/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 14:30:19.1136 7407/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11358, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:19.8720 7407/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 14:30:21.9889 11439/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 14:30:22.1060 11442/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 14:30:22.1068 11442/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 14:30:22.1495 11442/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 11442
+[ N 2019-08-27 14:30:26.3361 11442/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 14:30:45.7557 11442/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11477, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:45.7559 11442/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11514, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:49.3821 11442/T8 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11589, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:54.8975 11442/T8 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11635, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:30:54.8978 11442/T8 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11698, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:31:17.8332 11442/T8 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11754, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:31:17.8335 11442/T8 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11816, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:31:19.9897 11442/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11867, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:31:42.4595 11442/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 11933, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:31:42.4598 11442/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12002, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:31:44.8350 11442/T8 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12094, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 14:32:37.6170 11442/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 14:32:37.6172 11442/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 14:32:37.6174 11442/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12153, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:32:37.6177 11442/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12227, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:32:37.6179 11442/Tb Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 14:32:37.6180 11442/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 14:32:37.6183 11442/T8 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 14:32:37.6185 11442/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 14:32:37.6186 11442/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 14:32:37.6186 11442/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 14:32:37.6263 11442/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12153, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:32:37.6266 11442/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12227, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:32:38.2077 11442/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 14:32:55.1476 12359/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 14:32:55.2641 12362/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 14:32:55.2650 12362/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 14:32:55.3075 12362/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 12362
+[ N 2019-08-27 14:32:58.3060 12362/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 14:33:07.0298 12362/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12397, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:35.9948 12362/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12456, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:35.9951 12362/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12545, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:38.2572 12362/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12593, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 14:33:52.5341 12362/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 14:33:52.5343 12362/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 14:33:52.5344 12362/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12665, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:52.5347 12362/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12788, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:52.5349 12362/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 14:33:52.5350 12362/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 14:33:52.5350 12362/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 14:33:52.5352 12362/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 14:33:52.5357 12362/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 14:33:52.5358 12362/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 14:33:52.5367 12362/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12665, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:52.5370 12362/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 12788, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 14:33:53.0333 12362/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 15:06:24.3907 1274/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 15:06:24.5056 1277/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 15:06:24.5064 1277/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 15:06:24.5485 1277/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1277
+[ N 2019-08-27 15:06:27.1986 1277/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 15:07:10.7776 1277/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1312, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:21.4906 1277/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1530, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:27.9764 1277/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1587, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:27.9767 1277/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1654, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:35.8859 1277/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1699, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:47.0085 1277/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1792, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:47.0090 1277/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1880, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:07:49.9274 1277/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1921, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:28.6119 1277/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1977, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:28.6122 1277/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2029, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:31.0690 1277/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2089, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 15:08:41.4646 1277/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 15:08:41.4729 1277/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 15:08:41.4731 1277/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2138, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:41.4733 1277/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2193, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:41.4737 1277/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 15:08:41.4738 1277/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 15:08:41.4744 1277/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 15:08:41.4746 1277/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 15:08:41.4753 1277/Td Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 15:08:41.4754 1277/Td Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 15:08:41.4774 1277/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2138, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:41.4777 1277/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2193, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:08:42.0829 1277/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 15:08:45.3963 2256/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 15:08:45.5121 2259/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 15:08:45.5130 2259/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 15:08:45.5554 2259/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 2259
+[ N 2019-08-27 15:08:48.6620 2259/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2019-08-27 15:09:02.0232 2259/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 15:09:02.0236 2259/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 15:09:02.0238 2259/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2294, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:09:02.0240 2259/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2328, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:09:02.0244 2259/Tb Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 15:09:02.0246 2259/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 15:09:02.0249 2259/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 15:09:02.0251 2259/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 15:09:02.0256 2259/Tc Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 15:09:02.0258 2259/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 15:09:02.0402 2259/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2294, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:09:02.0404 2259/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2328, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:09:02.6302 2259/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 15:09:05.5940 2389/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 15:09:05.7090 2392/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 15:09:05.7098 2392/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 15:09:05.7540 2392/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 2392
+[ N 2019-08-27 15:09:08.3270 2392/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 15:09:23.6386 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2427, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:09:28.4889 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2605, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:09:32.9743 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2657, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:03.9806 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2711, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:03.9809 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2786, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:06.3028 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2846, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:24.3109 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2890, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:24.3111 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2953, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:25.9131 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3014, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:48.1474 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3063, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:48.1477 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3157, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:10:50.4307 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3200, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:11:52.1180 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3251, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:11:52.1183 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3309, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:12:24.5337 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3371, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:12:26.9239 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3422, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:12:42.0213 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3479, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:12:42.0216 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3567, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:12:45.5188 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3620, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:12:56.6105 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3673, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:24.7356 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3747, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:24.7359 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3813, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:26.8782 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3980, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:34.2160 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4039, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:39.1437 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4208, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:43.6176 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4348, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:53.1487 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4465, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:58.5934 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4550, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:13:58.5937 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4613, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:14:09.3753 2392/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4650, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:14:12.9865 2392/Tb age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4690, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 15:14:19.6829 2392/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 15:14:19.6831 2392/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 15:14:19.6832 2392/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4813, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:14:19.6835 2392/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4887, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:14:19.6837 2392/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 15:14:19.6838 2392/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 15:14:19.6840 2392/Tb Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 15:14:19.7121 2392/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 15:14:19.6843 2392/Tc Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 15:14:19.7123 2392/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 15:14:19.7522 2392/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4813, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:14:19.7524 2392/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4887, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 15:14:20.3695 2392/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished
+[ N 2019-08-27 21:14:30.9351 1451/T1 age/Wat/WatchdogMain.cpp:1366 ]: Starting Passenger watchdog...
+[ N 2019-08-27 21:14:31.1305 1454/T1 age/Cor/CoreMain.cpp:1339 ]: Starting Passenger core...
+[ N 2019-08-27 21:14:31.1312 1454/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2019-08-27 21:14:31.1738 1454/T1 age/Cor/CoreMain.cpp:1014 ]: Passenger core online, PID 1454
+[ N 2019-08-27 21:14:34.1290 1454/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ N 2019-08-27 21:14:46.6409 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1496, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:14:49.3252 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1549, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:14:59.3595 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1587, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:15:51.1406 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1665, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:15:51.1409 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1728, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:15:52.5517 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1799, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:16:03.8257 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1845, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:16:11.0399 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 1976, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:16:15.7639 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2103, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:20:54.2949 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2196, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:20:55.8435 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2412, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:21:06.6078 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2465, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:21:06.6081 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2527, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:21:11.7885 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2641, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:21:15.4107 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2771, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:21:18.7296 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2846, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:22:38.2170 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 2921, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:22:39.8057 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3000, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:22:44.6232 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3041, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:22:55.6255 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3210, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:23:01.4247 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3318, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:24.5182 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3435, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:25.9046 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3547, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:32.1047 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3597, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:43.7994 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3855, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:43.7997 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3940, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:46.2207 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 3985, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:54.1560 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4082, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:24:59.0739 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4257, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:04.2750 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4363, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:08.6119 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4483, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:12.2898 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4606, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:16.7573 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4693, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:51.5909 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4837, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:51.5912 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 4963, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:54.2429 1454/T9 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5039, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:25:59.5939 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5089, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:07.6979 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5315, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:10.3452 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5415, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:16.4295 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5524, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:23.7926 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5706, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:31.5948 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 5859, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:34.5227 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6001, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:42.1756 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6099, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:26:44.6335 1454/Ta age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6228, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:37:51.9168 1454/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6757, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:37:55.6780 1454/T4 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6807, application /home/doddle/Code/unipopcorn (development)
+
+[ N 2019-08-27 21:41:36.2265 1454/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2019-08-27 21:41:36.2270 1454/T1 age/Cor/CoreMain.cpp:1245 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2019-08-27 21:41:36.2460 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6328, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.2464 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6478, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.2465 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6577, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.2467 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6998, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.2582 1454/Ta Ser/Server.h:902 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2019-08-27 21:41:36.2585 1454/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2019-08-27 21:41:36.2587 1454/T9 Ser/Server.h:902 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2019-08-27 21:41:36.2589 1454/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2019-08-27 21:41:36.2494 1454/Tc Ser/Server.h:902 ]: [ApiServer] Freed 0 spare client objects
+[ N 2019-08-27 21:41:36.2665 1454/Tc Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2019-08-27 21:41:36.3184 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6328, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.3187 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6478, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.3188 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6577, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:36.3190 1454/T1 age/Cor/CoreMain.cpp:1146 ]: Checking whether to disconnect long-running connections for process 6998, application /home/doddle/Code/unipopcorn (development)
+[ N 2019-08-27 21:41:37.2248 1454/T1 age/Cor/CoreMain.cpp:1324 ]: Passenger core shutdown finished

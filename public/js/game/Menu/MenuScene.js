@@ -1,5 +1,5 @@
-import {Scene,ScenesManager} from "/js/ngine/scenes.js";
-import * as tools from "/js/ngine/tools.js";
+import {Scene,ScenesManager} from "/public/js/ngine/scenes.js";
+import * as tools from "/public/js/ngine/tools.js";
 
 export class MenuScene extends Scene{
     constructor(){
@@ -23,9 +23,9 @@ export class MenuScene extends Scene{
     }
 
     update() {
-        this.play.tilt(); 
+/*        this.play.tilt(); 
         this.titre.rotation = (Math.sin(this.cpt)/10); 
         this.cpt+=.1;
-    }
+*/    }
 }
 

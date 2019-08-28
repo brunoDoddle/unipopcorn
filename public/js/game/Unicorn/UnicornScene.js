@@ -1,7 +1,7 @@
 import {
     Scene,
     ScenesManager
-} from "/js/ngine/scenes.js";
+} from "/public/js/ngine/scenes.js";
 
 import {
     Unicorn,
@@ -11,7 +11,7 @@ import {
     WhereAreYou,
     FlyingObject,
     Nuages
-} from "/js/game/Unicorn/common.js";
+} from "/public/js/game/Unicorn/common.js";
 
 
 /**

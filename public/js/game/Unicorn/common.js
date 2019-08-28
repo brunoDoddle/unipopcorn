@@ -1,4 +1,4 @@
-import {ScenesManager} from "/js/ngine/scenes.js";
+import {ScenesManager} from "/public/js/ngine/scenes.js";
 /**
  * Envois des objets dans l'écran :-)
  * @export

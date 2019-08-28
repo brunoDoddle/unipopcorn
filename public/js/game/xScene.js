@@ -1,4 +1,4 @@
-import {Scene,ScenesManager} from "/js/ngine/scenes.js";
+import {Scene,ScenesManager} from "/public/js/ngine/scenes.js";
 
 export class xScene extends Scene{
     constructor(){

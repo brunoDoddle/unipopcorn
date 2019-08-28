@@ -1,5 +1,5 @@
-import {Scene,ScenesManager} from "/js/ngine/scenes.js";
-import * as tools from "/js/ngine/tools.js";
+import {Scene,ScenesManager} from "/public/js/ngine/scenes.js";
+import * as tools from "/public/js/ngine/tools.js";
 
 export class MortScene extends Scene{
     constructor(){

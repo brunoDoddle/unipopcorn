@@ -1,0 +1,24 @@
+<!-- Graf: PISKEL https://www.piskelapp.com/ -->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>uniPopCron</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="uniPopCorn">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#A03030">
+        <link rel="manifest" href="/manifest.json">
+        <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!--#####################################################-->
+        <!--Chargement des js-->
+        <!--#####################################################-->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/ngine/pixi.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/ngine/pixi-sound.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/ngine/pixi-bump.js') }}"></script>
+        <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <!--#####################################################-->
+    </body>
+</html>
